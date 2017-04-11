@@ -1,3 +1,15 @@
+- name: Themes
+  link: \#themes
+  new_window: false
+  highlight: false
+- name: Pricing
+  link: \#pricing
+  new_window: false
+  highlight: false
+- name: Features
+  link: \#features
+  new_window: false
+  highlight: false
 - name: FAQ
   link: /faq/
   new_window: false

@@ -1,12 +1,54 @@
 ---
-title: A Free Tool For Managing Church Services
-description: Organize your weekly church services with this weekly tool.
+title: Great websites for regular churches
+description: Free custom websites designed for churches with less than 200 regular attendees.
+features:
+  - feature: Designed to turn website visitors into church guests
+    details: Everything about my themes and designs is intended to get people to visit your church.  Your site won't be just a blog or a business website with a church page tagged on - it will designed from from the ground up to get people in your church.
+  - feature: Unbelieveably easy sermon management
+    details: My themes use Airtable for sermon management, your sound guy will love you and you'll get more of your sermons online.
+  - feature: Google Calendar Integration and Special Event Pages
+    details: Use a Google Calendar to manage your church's public facing calendar, but also have the option of creating awesome event pages for special events.
+  - feature: Ministry pages
+    details: My sites have pages specifically designed to be a home base for your ministries (i.e. youth groups, care ministries, etc.) complete with ministry calendars and photo galleries.
+  - feature: Everything else a church website needs
+    details: Special page templates for church leadership, statement of faith, pastor's blog, and more.
+  - feature: Unhackable and Easy To Update
+    details: Unlike 99% of church websites, the sites I make aren't on Wordpress and were designed to load fast and be super secure.
+pricing_table:
+  - name: Month To Month
+    color: "#3877E0"
+    features:
+      - text: $200 Setup Fee
+        highlight: true
+      - text: $20 Per Month
+        highlight: True
+      - text: Free Domain Name
+        highlight: false
+      - text: Hosting Included
+        highlight: false
+    call_to_action:
+      link: /website-started/
+      text: Get started
+  - name: Better Value
+    color: "#E12844"
+    features:
+      - text: $700 Up Front
+        highlight: true
+      - text: $0 Per Month
+        highlight: True
+      - text: Everything covered for 3 years
+        highlight: false
+      - text: Domain & Hosting
+        highlight: false
+    call_to_action:
+      link: /website-started/
+      text: Get started
 ---
 <section class="hero">
 	<div class="text-container">
-		<h1 class="editable"><strong>Organize Your Church Services</strong></h1>
-		<p class="subtext editable">Plan services, songs, sermons, announcemnents and more.</p>
-		<div class="cta button alt"><a href="/signup/">Get Your Free Tool</a></div>
+		<h1 class="editable"><strong>The Best Website Solution <br><em>For Most Churches</em></strong></h1>
+		<p class="subtext editable">Custom websites designed from the ground up <br>for the needs of churches with less than 200 regular attendees.</p>
+		<div class="cta button alt"><a href="/signup/">Get Yours Today</a></div>
 		<div>
 			<!-- <img src="/images/main_image.png" alt="Screenshot" class="editable" /> -->
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/0rpoDfKNWcQ" frameborder="0" allowfullscreen></iframe>
@@ -15,71 +57,95 @@ description: Organize your weekly church services with this weekly tool.
 </section>
 
 <div class="content">
-	<section>
-		<div class="container flex">
-			<div class="text editable">
-				<h2>Built for <strong>traditional</strong> churches.</h2>
-				<p>If you are the kind of church with fancy lights, a large band and smoke machines - this isn't for you.  This is a tool for churches that still doing traditional services: ie. hymns, a human doing announcements, a choir, etc. </p>
-			</div>
-			<div class="image">
-				<img src="/images/bbc.jpg" alt="Screenshot" class="editable" />
-			</div>
-		</div>
-	</section>
+<div id="themes">
+	<h2>Three Great Themes</h2>
+<p class="subtext">I've designed each of these themes from scratch to be awesome for churches and <strong>I can customize them however you like</strong> as part of the setup process.</p>
 
-	<section>
-		<div class="container flex">
-			<div class="text editable">
-				<h2><strong>Organize </strong>songs, hymns, announcements and sermons.</h2>
-				<p>Keep track of the essential elements of upcoming and past services using this easy to use table.  Easily access past specials, track which hymns you sing how often, etc..  <strong>Collaborate with staff, volunteers and musicians.</strong></p>
-			</div>
-			<div class="image">
-				<img src="/images/hymns.png" alt="Screenshot" class="editable" />
-			</div>
-		</div>
-	</section>
+  <section style="padding-top: 50px;">
+    <div class="container flex">
+      <div class="text editable">
+        <h2><strong>Colorado</strong></h2>
+        <p>This theme is fantastic for smaller churches and church plants. It hides any time related content (blog posts, sermons, etc.) on the home page and only shows them when they are fresh or relevant.</p>
+      </div>
+      <div class="image">
+        <img src="/images/colorado.png" alt="Screenshot" class="screenshot editable" />
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container flex">
+      <div class="text editable">
+        <h2><strong>California</strong></h2>
+        <p>This theme is desinged to put the church life of a lively church on display for potential visitors.  It includes a current sermon series widget and featured ministries on the home page.</p>
+      </div>
+      <div class="image">
+        <img src="/images/california.png" alt="Screenshot" class="screenshot editable" />
+      </div>
+    </div>
+  </section>
+  <section style="padding-bottom: 50px;">
+    <div class="container flex">
+      <div class="text editable">
+        <h2><strong>New England</strong></h2>
+        <p>This theme is an all around work horse that works great with a very traditional church.  It features latest blog posts, sermons and upcoming events on the home page.</p>
+      </div>
+      <div class="image">
+        <img src="/images/new-england.png" alt="Screenshot" class="screenshot editable" />
+      </div>
+    </div>
+  </section>
+  </div><!--/#themes-->
+	<section id="features">
+		<h2>All of the Features You Need For Your Church</h2>
+		<p class="subtext">I've worked for years on creating the best website solution for small churches.  Here are some of the features:</p>
+{% if page.features %}
+  <dl class="faq">
+    {% for item in page.features %}
+      <div>
+        <dt>{{ item.feature }}</dt>
+        <dd>{{ item.details }}</dd>
+      </div>
+    {% endfor %}
+  </dl>
+{% endif %}
+	</section><!--/features-->
+	<section id="pricing">
+		<h2>Super easy.  Super Affordable.</h2>
+<p class="subtext">Check out my prices below. Designed to be affordable for small churches.</p>
+<div class="plans">
+	{% for plan in page.pricing_table %}
+		<ul class="plan">
+			<li style="background: {{ plan.color }}">
+				<h3>{{ plan.name }}</h3>
+			</li>
+			{% for feature in plan.features %}
+				<li {% if feature.highlight %} class="highlighted"{% endif %}>{{ feature.text }}</li>
+			{% endfor %}
 
-	<section>
-		<div class="container flex">
-			<div class="text editable">
-				<h2>Quickly generate <strong>printed</strong> orders of service.</h2>
-				<p>We give you an html file that you can save to your desktop, simply click it to open it in a browser, choose your service from a list, and click print.  <strong>Save time every week.</strong></p>
-			</div>
-			<div class="image">
-				<img src="/images/oos.png" alt="Screenshot" class="screenshot editable" />
-			</div>
-		</div>
-	</section>
-	<section>
-		<div class="container flex">
-			<div class="text editable">
-				<h2><strong>Easy</strong> access on any computer, tablet or smartphone.</h2>
-				<p>This tool is built on top of <a href="https://airtable.com/invite/r/MW9nJ7HK">Airtable</a>.  So you get access via a world class interface on any web browser and awesome apps for your phone.</p>
-			</div>
-			<div class="image">
-				<img src="/images/devices.png" alt="Screenshot" class="screenshot editable" />
-			</div>
-		</div>
-	</section>
+			{% if plan.call_to_action %}
+				<li class="pricing-cta"><div class="button"><a style="background: {{ plan.color }}" href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a></div></li>
+			{% endif %}
+		</ul>
+	{% endfor %}
+</div>
+	</section><!--/#pricing-->
 
 	<section class="testimonial">
 		<div class="container flex">
 			<div class="testimonial-block">
-				<div class="square-image editable"><img src="/images/ryan.jpg" alt="Ryan Hayden"></div>
+				<div class="square-image editable"><img src="/images/bryan.png" alt="Bryan Ries"></div>
 				<blockquote>
-					<p class="editable">I built this tool with the church where I serve as pastor in mind. I was sick of thumbing though a hymn book, guessing how long it's been since we sung that song.  I wanted my Assistant Pastor, pianists, and musicians to be on the same page.
-					<br>
-					I sincerely hope that it is a blessing to your church.
+					<p class="editable">"When I was having issues with my website and needed help and a redesign, Ryan Hayden provided exactly the help I needed....Ryan goes above and beyond to help you know how to keep the site updated on your own. I highly recommend his services."
 					</p>
 					
-					<p class="editable author">Ryan Hayden - Pastor, Bible Baptist Church of Mattoon, IL.</p>
+					<p class="editable author">Bryan Ries - Missionary, Host of the Ministry Connection Podcast.</p>
 				</blockquote>
 			</div>
 		</div>
 	</section>
 
 	<section class="bottom-cta">
-		<h2 class="editable"><strong>Get a better grip</strong><br> on your church services today</h2>
-		<div class="button alt"><a href="/signup/" >Get Your Free Tool</a></div>
+		<h2 class="editable"><strong>You are out of excuses</strong><br> and <em>finally be proud</em> of your church website.</h2>
+		<div class="button alt"><a href="/signup/" >Sign Up Today</a></div>
 	</section>
 </div>
